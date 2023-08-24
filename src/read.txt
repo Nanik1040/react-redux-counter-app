@@ -1,0 +1,28 @@
+store.js
+
+1.initially will create a store to hlds the state of yur app (strore.js)
+2.will import createStore from redux library
+3.will creducer function that takes the current state and actions as parameters
+4.in this proj . i added two action types increment and decrement
+
+
+actions.js
+
+1.will create actions here and definin which action type it is (we defined action types in store.js)
+
+
+counter.js
+
+1.connect: This function connects a React component to the Redux store. It takes two arguments: mapStateToProps and an object containing action creators.
+
+2.mapStateToProps: This function takes the Redux store's state as a parameter and returns an object that maps the state to props that will be passed to the connected component.
+
+index.js / redux provider
+
+1.we need to wrap our app comp with the provider from react-redux to make redux store available for all the comps
+2.as we added in the provider , we can acess this store as prop
+
+
+app.js
+
+1.just wrap up the counter app in this thats it 
